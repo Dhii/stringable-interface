@@ -14,7 +14,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/php-cs-fixer-config.git",
-                "reference": "4fd4ca26a62f3a342a5e039f8b2697f2f8da0b8f"
+                "reference": "f2bcbde375b70b8e192321ef549879b325b88abe"
             },
             "require": {
                 "friendsofphp/php-cs-fixer": ">=1.11 <1.12",
@@ -36,7 +36,7 @@
                 }
             ],
             "description": "A default PHP CS Fixer config implementation",
-            "time": "2016-07-10 01:13:10"
+            "time": "2016-07-10 02:48:10"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
