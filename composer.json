@@ -1,6 +1,6 @@
 {
     "name": "dhii/stringable-interface",
-    "description": "An interface that represents the contract which requires the implementation of the `__toString()` method.",
+    "description": "Interoperability interface for objects that can be cast to string",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,19 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-master"
+        "phpunit/phpunit": "4.*",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/php-cs-fixer-config": "dev-php-5.3"
     },
     "autoload": {
         "psr-4": {
             "Dhii\\Util\\String\\": "src/"
         }
-    },
-    "repositories": [
-        {
-            "url": "https://github.com/Dhii/php-cs-fixer-config.git",
-            "type": "git"
-        }
-    ]
+    }
 }
