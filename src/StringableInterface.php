@@ -5,7 +5,7 @@ namespace Dhii\Util\String;
 /**
  * Something that can be cast to string.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface StringableInterface
 {
@@ -15,7 +15,7 @@ interface StringableInterface
      * This method {@link http://stackoverflow.com/a/2429735/565229 cannot throw an exception},
      * but can use `trigger_error()`.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string A string representation of this object.
      */
