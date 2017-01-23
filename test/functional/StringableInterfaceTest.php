@@ -9,7 +9,7 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class ContextInterfaceTest extends TestCase
+class StringableInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
