@@ -5,8 +5,6 @@ namespace Dhii\Util\String;
 /**
  * Something that can be cast to string.
  *
- * @author Dhii Team <development@dhii.co>
- *
  * @since [*next-version*]
  */
 interface StringableInterface
