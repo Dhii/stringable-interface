@@ -5,3 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/Dhii/stringable-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/stringable-interface/coverage)
 
 Increasing interoperability for objects that can be cast to string.
+
+This package complies with [Dhii] standards
+
+[Dhii]: https://github.com/Dhii/dhii
