@@ -2,7 +2,9 @@
 
 namespace Dhii\Util\String\FuncTest;
 
-use Xpmock\TestCase;
+use Dhii\Util\String\StringableInterface as Subject;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Tests {@see \Dhii\Util\String\StringableInterface}.
@@ -11,25 +13,19 @@ use Xpmock\TestCase;
  */
 class StringableInterfaceTest extends TestCase
 {
-    /**
-     * The name of the test subject.
-     *
-     * @since 0.1
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Util\\String\\StringableInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return ContextInterface
+     * @return Subject|MockObject
      */
-    public function createInstance()
+    public function createSubject()
     {
-        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->__toString()
-            ->new();
+        $mock = $this->getMockBuilder(Subject::class)
+            ->setMethods(['__toString'])
+            ->getMockForAbstractClass();
 
         return $mock;
     }
@@ -41,8 +37,8 @@ class StringableInterfaceTest extends TestCase
      */
     public function testCanBeCreated()
     {
-        $subject = $this->createInstance();
+        $subject = $this->createSubject();
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
+        $this->assertInstanceOf(Subject::class, $subject);
     }
 }
