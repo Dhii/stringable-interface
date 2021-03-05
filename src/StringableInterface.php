@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Util\String;
 
 use Stringable;
@@ -20,6 +22,7 @@ interface StringableInterface extends Stringable
      * @since 0.1
      *
      * @return string A string representation of this object.
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
      */
     public function __toString();
 }
