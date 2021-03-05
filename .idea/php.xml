@@ -52,7 +52,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/glob" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -66,7 +65,7 @@
           <envs />
         </remote_data>
       </interpreter>
-      <interpreter id="ecd5bdee-3682-404d-9a58-3b4c81b7b4fc" name="Test" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+      <interpreter id="ecd5bdee-3682-404d-9a58-3b4c81b7b4fc" name="Test" home="docker-compose://DATA" debugger_id="php.debugger.XDebug" debugger_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so">
         <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="test" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
@@ -174,7 +173,6 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="ecd5bdee-3682-404d-9a58-3b4c81b7b4fc" configuration_file_path="/app/phpunit.xml.dist" custom_loader_path="/app/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
-      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml.dist" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </project>
