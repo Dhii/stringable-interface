@@ -1,11 +1,10 @@
 # Stringable Interface
-
-[![Build Status](https://travis-ci.org/Dhii/stringable-interface.svg?branch=master)](https://travis-ci.org/Dhii/stringable-interface)
-[![Code Climate](https://codeclimate.com/github/Dhii/stringable-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/stringable-interface)
-[![Test Coverage](https://codeclimate.com/github/Dhii/stringable-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/stringable-interface/coverage)
+[![Continuous Integration](https://github.com/Dhii/stringable-interface/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/Dhii/stringable-interface/actions/workflows/continuous-integration.yml)
+[![Latest Stable Version](https://poser.pugx.org/dhii/stringable-interface/v)](//packagist.org/packages/dhii/stringable-interface)
+[![Latest Unstable Version](https://poser.pugx.org/dhii/stringable-interface/v/unstable)](//packagist.org/packages/dhii/stringable-interface)
 
 Increasing interoperability for objects that can be cast to string.
+This was useful before [`symfony/polyfill-php80:1.19`][] which adds the
+`Stringable` type if it doesn't natively exist for pre-PHP-8.0. Use that instead.
 
-This package complies with [Dhii] standards
-
-[Dhii]: https://github.com/Dhii/dhii
+[`symfony/polyfill-php80:1.19`]: https://github.com/symfony/polyfill-php80/releases/tag/v1.19.0
